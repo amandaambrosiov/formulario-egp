@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"> -->
+    <title>Acesso ao AVA</title>
+</head>
+
+<body>
+    <header class="avaheader">
+        <img src="imgs/EGPCE_Horizontal_Branca.png" alt="">
+    </header>
+    <div class="form">
+        <form action="">
+            <header>
+                <h1 class="title">Acesso ao AVA</h1>
+            </header>
+            <div class="single-input">
+                <input required type="number" name="" id="cpf" class="input">
+                <label for="cpf">CPF</label>
+            </div>
+            <div class="single-input">
+                <input required type="password" name="" id="myPassword" class="input">
+                <label for="myPassword">Senha</label>
+            </div>
+
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABDUlEQVQ4jd2SvW3DMBBGbwQVKlyo4BGC4FKFS4+TATKCNxAggkeoSpHSRQbwAB7AA7hQoUKFLH6E2qQQHfgHdpo0yQHX8T3exyPR/ytlQ8kOhgV7FvSx9+xglA3lM3DBgh0LPn/onbJhcQ0bv2SHlgVgQa/suFHVkCg7bm5gzB2OyvjlDFdDcoa19etZMN8Qp7oUDPEM2KFV1ZAQO2zPMBERO7Ra4JQNpRa4K4FDS0R0IdneCbQLb4/zh/c7QdH4NL40tPXrovFpjHQr6PJ6yr5hQV80PiUiIm1OKxZ0LICS8TWvpyyOf2DBQQtcXk8Zi3+JcKfNafVsjZ0WfGgJlZZQxZjdwzX+ykf6u/UF0Fwo5Apfcq8AAAAASUVORK5CYII=" onclick="mouseoverPass();" onmouseout="mouseoutPass();"  id="olho" class="olho"/>
+
+            <div class="centralizar">
+                <input type="submit" value="Acessar" class="Acessar">
+            </div>
+            <div class="centralizar">
+                <a href="">Esqueceu a senha</a>
+                <a href="">Cadastrar</a>
+            </div>
+        </form>
+
+    </div>
+    <footer>
+        <div class="avafooter">
+            <a href=""><i class="fa-regular fa-copyright"></i> 2023 - Escola de Gestão Pública do Estado do Ceará -
+                EGPCE</a>
+        </div>
+    </footer>
+
+    <script>
+        function mouseoverPass(obj) {
+  var obj = document.getElementById('myPassword');
+  obj.type = "text";
+}
+function mouseoutPass(obj) {
+  var obj = document.getElementById('myPassword');
+  obj.type = "password";
+}
+    </script>
+</body>
+
+</html>
