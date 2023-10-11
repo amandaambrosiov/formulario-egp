@@ -1,39 +1,44 @@
-:root{
+:root {
     --corVerdeClaro: #89BB9E;
     --corVerdeEscuro: #39A165;
 }
+
 /* @import url('https://fonts.googleapis.com/css2?family=Gabarito:wght@500&display=swap'); */
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     /* font-family: 'Gabarito', cursive; */
 }
-.avaheader{
+
+.avaheader {
     background-color: var(--corVerdeEscuro);
     display: flex;
     justify-content: center;
 }
-.form{
+
+.form {
     width: 100%;
     min-height: 75vh;
     display: flex;
-    align-items: center ;
+    align-items: center;
     justify-content: center;
-    
+
 }
-form{
+
+form {
     background-color: white;
     /* border: 2px solid gray; */
     border-radius: 10px;
     width: 100%;
     max-width: 350px;
-    box-shadow: 0 10px 10px  rgba(49, 49, 49, 0.822);
+    box-shadow: 0 10px 10px rgba(49, 49, 49, 0.822);
     padding: 0;
     padding-bottom: 20px;
 }
-.title{
+
+.title {
     display: flex;
     justify-content: center;
     background-color: #39A165;
@@ -44,32 +49,62 @@ form{
     border-top-right-radius: 9px;
     font-size: 25px;
 }
-div.single-input{
+
+.senha {
+    cursor: pointer;
+    display: flex;
+    float: right;
+    margin-right: 35px;
+    
+}
+.senha button{
+    /* display: flex; */
+    /* justify-content: center; */
+    background: none;
+    padding: 10px;
+    width: 30%;
+    border-radius: 5px;
+    color: gray;
+    font-size: 12px;
+    border: none;
+    margin-top: -95px;
+    z-index: 999;
+    /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
+}
+.senha button:hover{
+    color: var(--corVerdeEscuro);
+}
+
+div.single-input {
     width: 100%;
     position: relative;
     padding: 2rem;
 }
-input[type=number]::-webkit-inner-spin-button { 
+
+input[type=number]::-webkit-inner-spin-button {
     -webkit-appearance: none;
-    
-}
-input[type=number] { 
-   -moz-appearance: textfield;
-   appearance: textfield;
 
 }
-div.single-input label{
+
+input[type=number] {
+    -moz-appearance: textfield;
+    appearance: textfield;
+
+}
+
+div.single-input label {
     font-size: 16px;
     position: absolute;
-    left:0px;
+    left: 0px;
     bottom: 5px;
     color: gray;
     cursor: text;
     padding: 2rem;
     transition: 0.5s ease-in-out;
-    
+
 }
-div.single-input .input{
+
+div.single-input .input {
     width: 100%;
     /* padding: 5px; */
     color: gray;
@@ -79,40 +114,47 @@ div.single-input .input{
     font-size: 16px;
     background: none;
 }
+
 div.single-input input:focus,
-div.single-input input:valid{
+div.single-input input:valid {
     border-bottom: 2px solid var(--corVerdeEscuro);
 }
-div.single-input input:focus ~ label,
-div.single-input input:valid ~ label{
+
+div.single-input input:focus~label,
+div.single-input input:valid~label {
     transform: translateY(-24px);
     font-size: 12px;
     color: var(--corVerdeEscuro);
 }
-.centralizar{
+
+.centralizar {
     display: flex;
     justify-content: center;
     margin-top: 15px;
     display: flex;
     justify-content: space-evenly;
 }
-.Acessar{
+
+.Acessar {
     background-color: #39A165;
     color: white;
     border-radius: 7px;
     border: none;
-    width:80%;
+    width: 80%;
     padding: 1rem;
     cursor: pointer;
     transition: all .2s ease-in-out;
 }
-.Acessar:hover{
+
+.Acessar:hover {
     transform: scale(1.1);
 }
-.centralizar a{
+
+.centralizar a {
     color: #39A165;
 }
-.avafooter{
+
+.avafooter {
     background-color: var(--corVerdeClaro);
     bottom: 0;
     padding: 10px;
@@ -121,7 +163,8 @@ div.single-input input:valid ~ label{
     display: flex;
     justify-content: center;
 }
-.avafooter a{
+
+.avafooter a {
     text-decoration: none;
     color: white;
 }
